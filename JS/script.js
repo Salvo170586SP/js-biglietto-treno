@@ -35,11 +35,11 @@ Applicare un po' di CSS se siete riusciti a fare il bonus 1
 
 
 //1-chiedere al passeggero numero di km
-const travelDistance = prompt('Quanti km devi percorrere?', '150');
+const travelDistance = prompt('Quanti km devi percorrere?', '150').trim();
 console.log("travelDistance: ", travelDistance);
 
 //2-chiedere al passeggero l'età
-const ageUser = prompt('Quanti anni hai?', '15');
+const ageUser = prompt('Quanti anni hai?', '15').trim();
 console.log("ageUser: ", ageUser);
 
 //3- calcolare prezzo viaggio a ogni km
