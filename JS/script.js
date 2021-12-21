@@ -33,4 +33,8 @@ Applicare un po' di CSS se siete riusciti a fare il bonus 1
 
 //1-chiedere al passeggero numero di km
 const travelDistance = prompt('Quanti km devi percorrere?', '20');
-console.log(travelDistance);
+console.log("travelDistance: ", travelDistance);
+
+//2-chiedere al passeggero l'età
+const ageUser = prompt('Quanti anni hai?', '35');
+console.log("ageUser: ", ageUser);
