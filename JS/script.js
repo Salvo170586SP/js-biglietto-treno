@@ -35,16 +35,19 @@ Applicare un po' di CSS se siete riusciti a fare il bonus 1
 
 
 //1-chiedere al passeggero numero di km
-const travelDistance = prompt('Quanti km devi percorrere?', '150').trim();
-console.log("travelDistance: ", travelDistance);
+const travelDistance = prompt('Quanti km devi percorrere?').trim();
 
 //2-chiedere al passeggero l'età
-const ageUser = prompt('Quanti anni hai?', '15').trim();
-console.log("ageUser: ", ageUser);
+const ageUser = prompt('Quanti anni hai?').trim();
 
 //3- calcolare prezzo viaggio a ogni km
 const price = 0.21 * travelDistance;
-console.log(price);
+
+
+console.log("travelDistance: ", travelDistance);
+console.log("ageUser: ", ageUser);
+console.log("price: ", price);
+
 
 let totalPrice = price;
 
@@ -53,13 +56,13 @@ if(ageUser < 18){
     //se minorenne esegui lo sconto del 20%
     totalPrice = price * (20 / 100);
 
-  console.log(totalPrice.toFixed(2));
+  console.log("total price under 18: ", totalPrice.toFixed(2));
 
 }else if(ageUser > 65){
     //altrimenti se ha più di 65 anni fai lo sconto del 40%
     totalPrice = price * (40 / 100);
 
-    console.log(totalPrice.toFixed(2));
+    console.log("total price over 65: ", totalPrice.toFixed(2));
 } 
  
 document.getElementById('distance').innerText = travelDistance;
