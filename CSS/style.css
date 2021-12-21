@@ -1,0 +1,14 @@
+.box-travel{
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+
+.fs-10{
+    font-size: 10px;
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+}

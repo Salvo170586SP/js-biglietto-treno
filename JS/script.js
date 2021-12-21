@@ -53,14 +53,15 @@ if(ageUser < 18){
     //se minorenne esegui lo sconto del 20%
     totalPrice = price * (20 / 100);
 
-  console.log(totalPrice);
+  console.log(totalPrice.toFixed(2));
 
 }else if(ageUser > 65){
     //altrimenti se ha più di 65 anni fai lo sconto del 40%
     totalPrice = price * (40 / 100);
-    totalPrice -= price;
 
-    console.log(totalPrice);
+    console.log(totalPrice.toFixed(2));
 } 
  
-document.getElementById('price-result').innerText = `Il prezzo è di ${totalPrice} `;
+document.getElementById('distance').innerText = travelDistance;
+document.getElementById('age').innerText = ageUser;
+document.getElementById('price-result').innerText = `Il prezzo è di ${totalPrice.toFixed(2)} `;
