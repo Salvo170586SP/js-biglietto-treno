@@ -64,4 +64,4 @@ if(ageUser < 18){
  
 document.getElementById('distance').innerText = travelDistance;
 document.getElementById('age').innerText = ageUser;
-document.getElementById('price-result').innerText = `Il prezzo è di ${totalPrice.toFixed(2)} `;
+document.getElementById('price-result').innerText = totalPrice.toFixed(2);
