@@ -46,3 +46,11 @@ console.log("ageUser: ", ageUser);
 const price = 0.21 * travelDistance;
 console.log(price);
 
+//5- calcolare prezzo viaggio calcolare 0.21 a ogni km 
+
+if(18 > ageUser){
+    console.log("è minorenne");
+}else if (65 < ageUser){
+    console.log("è over 65")
+}
+
