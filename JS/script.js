@@ -57,7 +57,10 @@ if(ageUser < 18){
 
 }else if(ageUser > 65){
     //altrimenti se ha più di 65 anni fai lo sconto del 40%
-    
-   
-    console.log(priceOver);
-}
+    totalPrice = price * (40 / 100);
+    totalPrice -= price;
+
+    console.log(totalPrice);
+} 
+ 
+document.getElementById('price-result').innerText = `Il prezzo è di ${totalPrice} `;
